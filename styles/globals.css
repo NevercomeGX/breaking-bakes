@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,23 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face{
+  font-family: "burtons";
+  src: url("../public/burtons.otf");
+}
+
+::-webkit-scrollbar{
+  width:15px;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(20,184,166);
+  background: linear-gradient(180deg, rgba(20,184,166,1) 15%, rgba(42,0,255,1),84%);
+  border-radius: 10px;
+
 }
