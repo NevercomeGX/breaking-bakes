@@ -1,0 +1,46 @@
+name: Next CI/CD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  lintTest:
+    name: Lint
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Clone Repostitory
+        uses: actions/checkout@v2
+      - name: Install Dependecies
+        run: |
+          echo "Running Installing Dependencies..."
+          npm install
+      - name: Run Linting
+        run: |
+          echo "Running Linting tests..."
+          npm run lint
+        env:
+          CI: true
+  securityCheck:
+    name: Security Check
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Check for Security
+      run: |
+        echo "Running Security Chechks .."
+        sleep 5;
+        echo "Running Security Chechks .. 1"
+        sleep 5;
+        echo "Running Security Chechks .. 2"
+        sleep 5;
+        echo "Running Security Chechks .. 3"
+        sleep 5;
+
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-20.04
+    needs: [lintTest, securityCheck]
+    steps:
+      - name: Install Dependencies
+        run: |
+          echo "Deployment in Progress.."
