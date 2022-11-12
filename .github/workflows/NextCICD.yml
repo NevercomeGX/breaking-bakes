@@ -1,45 +1,21 @@
-name: Next CI/CD
-
+name: CI
 on:
   push:
-    branches: [Production,Developing]
-
+    branches: [ Production, Developing ]
+  pull_request:
+    branches: [ Production, Developing ]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: Clone Reasdasdasy
-      - uses: actions/checkout@v2
-      - name: Clone Rasdasdasdry
+      - name: Install NPM dependencies
+      - uses: actions/checkout@v1
+      - name: Install NPM dependencies
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
-      - name: Clone asdasdasdstitory
-      - run: npm ci
-      - name: Clone asdasdasfgepostitory
-      - run: npm run build
-        env:
-          CI: true
-  securityCheck:
-    name: Security Check
-    runs-on: self-hosted
-    steps:
-    - name: Check for Security
-      run: |
-        echo "Running Security Chechks .."
-        sleep 5;
-        echo "Running Security Chechks .. 1"
-        sleep 5;
-        echo "Running Security Chechks .. 2"
-        sleep 5;
-        echo "Running Security Chechks .. 3"
-        sleep 5;
-
-  deploy:
-    name: Deployment
-    runs-on: self-hosted
-    needs: [lintTest, securityCheck]
-    steps:
-      - name: Install Dependencies
-        run: |
-          echo "Deployment in Progress.."
+          node-version: '12.x'
+      - name: Install NPM dependencies
+        run: npm install
+      - name: Deploy Next.js app
+        run: npx serverless
