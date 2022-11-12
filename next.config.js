@@ -3,8 +3,4 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = {
-  images: {
-    loader: "custom"
-  }
-}
+module.exports = nextConfig
