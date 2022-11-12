@@ -41,5 +41,6 @@ jobs:
     runs-on: ubuntu-20.04
     needs: [lintTest, securityCheck]
     steps:
-      - name: Creating build
-      - run: npm run build
+      - name: Install Dependencies
+        run: |
+          echo "Deployment in Progress.."
