@@ -10,6 +10,7 @@ jobs:
     steps:
       - name: Clone Repostitory
       - uses: actions/checkout@v2
+      - name: Clone Repostitory
       - uses: actions/setup-node@v1
         with:
           node-version: 12
