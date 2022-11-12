@@ -10,9 +10,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Install NPM dependencies
-      - uses: actions/checkout@v1
+        uses: actions/checkout@v1
       - name: Install NPM dependencies
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: '12.x'
       - name: Install NPM dependencies
