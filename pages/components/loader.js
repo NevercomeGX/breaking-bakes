@@ -1,5 +1,5 @@
 function imageLoader({ src }) {
-    return `/${src}`; 
+    return `public/${src}`; 
   }
   
   module.exports = imageLoader;
