@@ -21,7 +21,7 @@ a {
 
 @font-face{
   font-family: "burtons";
-  src: url("../public/burtons.otf");
+  src: url("/public/burtons.otf");
 }
 
 ::-webkit-scrollbar{
