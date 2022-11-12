@@ -1,22 +1,45 @@
-name: Next CI/CD
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+##
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deployment to production
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [Production,Developing]
+    branches: ["Production"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "Default"
+  cancel-in-progress: true
 
 jobs:
+<<<<<<< HEAD
   lintTest:
     name: Lint
     runs-on: ubuntu-20.04
+=======
+  # Build job
+  build:
+    runs-on: self-hosted
+>>>>>>> 1db5bd8dd7dc08ed919943a406a43353136af1dd
     steps:
-      - name: Clone Repostitory
-        uses: actions/checkout@v2
-      - name: Install Dependecies
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Detect package manager
+        id: detect-package-manager
         run: |
-          echo "Running Installing Dependencies..."
-          npm install
-      - name: Run Linting
-        run: |
+<<<<<<< HEAD
           echo "Running Linting tests..."
           npm run lint
         env:
@@ -35,13 +58,50 @@ jobs:
         sleep 5;
         echo "Running Security Chechks .. 3"
         sleep 5;
+=======
+          if [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "::set-output name=manager::npm"
+            echo "::set-output name=command::ci"
+            echo "::set-output name=runner::npx --no-install"
+            exit 0
+          else
+            echo "Unable to determine packager manager"
+            exit 1
+          fi
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.12.1"
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+>>>>>>> 1db5bd8dd7dc08ed919943a406a43353136af1dd
 
+  # Deployment job
   deploy:
+<<<<<<< HEAD
     name: Deployment
     runs-on: ubuntu-20.04
     needs: [lintTest, securityCheck]
+=======
+    runs-on: self-hosted
+    needs: build
+>>>>>>> 1db5bd8dd7dc08ed919943a406a43353136af1dd
     steps:
-      - name: Install Dependencies
+      - name: Deploy to GitHub Pages
         run: |
-          echo "Deployment in Progress.."
-
+          echo "Deploying..."
+          sleep 5;
+          echo "Deployment completed, you can now go sleep ;)"

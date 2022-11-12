@@ -94,7 +94,7 @@ export default function Home() {
 	<AiFillYoutube />
 	</div>
 	<div className="mx-auto bg-gradient-to-b from-teal-500 rounded-md w-60 h-60 relative overflow-hidden mt-10 md:h-80 md:w-80">
-	<Image src={deved} layout="fill" objectFit="cover"  />
+	 <Image  src={deved} layout="fill" objectFit="cover"  />
 	</div>
 </div>
 </section>
@@ -114,7 +114,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 		<div className="lg:flex gap-10">
 			<div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-			<Image src={main1} width={200} height={200} className="rounded-lg object-cover" />
+			 <Image  src={main1} width={200} height={200} className="rounded-lg object-cover" />
 			<h3 className="text-lg font-medium pt-8 pb-2 ">Pasteleria</h3>
 			<p className="py-2">
 			Todos nuestros productos son elaborados con ingredientes naturales y de la mejor calidad.
@@ -122,7 +122,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 
 			</div>
 			<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-			<Image src={main2} width={200} height={200} className="rounded-lg object-cover" />
+			 <Image  src={main2} width={200} height={200} className="rounded-lg object-cover" />
 			<h3 className="text-lg font-medium pt-8 pb-2 ">Decoracion</h3>
 			<p className="py-2">
 			Aqui podrás encontrar todo lo que necesitas para decorar pasteles de forma fácil y rápida.
@@ -130,7 +130,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 
 			</div>
 			<div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-			<Image src={main3} width={200} height={200} className="rounded-lg object-cover" />
+			 <Image  src={main3} width={200} height={200} className="rounded-lg object-cover" />
 			<h3 className="text-lg font-medium pt-8 pb-2 ">Delivery</h3>
 			<p className="py-2">
 			Ofrecemos un servicio de entrega a domicilio en toda la ciudad.
@@ -146,7 +146,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  px-10 rounded-xl">
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake1} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake1}/>
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO LIGHT DE PLÁTANO Y MANZANA<br></br></h3>
 
@@ -156,7 +156,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 			</div>
 		</div>
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake2} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake2} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO CON COBERTURA DE CHOCOLATE</h3>
 
@@ -167,7 +167,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake3} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake3} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO DE SEMILLAS DE CHÍA</h3>
 
@@ -178,7 +178,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake4} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake4} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO MARMOLADO CON FRAMBUESAS</h3>
 
@@ -189,7 +189,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake5} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake5} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO PLUMCAKE DE AGUACATE</h3>
 
@@ -200,7 +200,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake6} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake6} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO DE CHOCOLATE</h3>
 
@@ -211,7 +211,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake7} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake7} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO DE MANZANA<br></br></h3>
 
@@ -222,7 +222,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake8} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake8} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO DE NARANJA<br></br></h3>
 
@@ -233,7 +233,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake9} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake9} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO MADEIRA</h3>
 
@@ -244,7 +244,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake10} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={cake10} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black ">BIZCOCHO <br></br>"1, 2, 3"</h3>
 
@@ -264,7 +264,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap  px-10 rounded-xl">
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec1} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec1} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black uppercase ">TOPPER de NUmero<br></br></h3>
 
@@ -274,7 +274,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 			</div>
 		</div>
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec2} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec2} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black uppercase ">topper de cocodrilo</h3>
 
@@ -285,7 +285,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec3} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec3} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black uppercase ">Topper de oveja negra</h3>
 
@@ -296,7 +296,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec4} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec4} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black uppercase ">Topper de perro</h3>
 
@@ -307,7 +307,7 @@ postres para todas las ocasiones. Todos nuestros pasteles y postres son hechos c
 		</div>
 
 		<div className="text-center basis-1/6 flex-1 bg-white rounded-xl px-5 py-10 shadow-lg p-10">
-			<Image className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec5} />
+			 <Image  className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" src={dec5} />
 			<div>
 			<h3 className="text-2xl py-1 dark:text-black uppercase">Star Wars Toppers</h3>
 
