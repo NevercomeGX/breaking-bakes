@@ -8,17 +8,16 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - name: Clone Repostitory
+      - name: Clone Reasdasdasy
       - uses: actions/checkout@v2
-      - name: Clone Repostitory
+      - name: Clone Rasdasdasdry
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Clone Repostitory
+      - name: Clone asdasdasdstitory
       - run: npm ci
-      - name: Clone Repostitory
+      - name: Clone asdasdasfgepostitory
       - run: npm run build
-
         env:
           CI: true
   securityCheck:
