@@ -2,7 +2,7 @@ name: Next CI/CD
 
 on:
   push:
-    branches: [main]
+    branches: [Production,Developing]
 
 jobs:
   lintTest:
@@ -44,4 +44,4 @@ jobs:
       - name: Install Dependencies
         run: |
           echo "Deployment in Progress.."
-          
+
