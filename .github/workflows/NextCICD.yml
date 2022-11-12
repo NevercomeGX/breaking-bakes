@@ -7,7 +7,7 @@ on:
 jobs:
   lintTest:
     name: Lint
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     steps:
       - name: Clone Repostitory
         uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
           CI: true
   securityCheck:
     name: Security Check
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     steps:
     - name: Check for Security
       run: |
@@ -38,7 +38,7 @@ jobs:
 
   deploy:
     name: Deployment
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     needs: [lintTest, securityCheck]
     steps:
       - name: Install Dependencies
