@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js site to Pages
+name: CI/CD Test
 
 on:
   # Runs on pushes targeting the default branch
@@ -27,7 +27,9 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
+      group: org/default
+      labels: label-1
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -68,7 +70,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     needs: build
     steps:
       - name: Deploy to GitHub Pages
