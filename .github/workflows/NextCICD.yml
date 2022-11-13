@@ -29,7 +29,6 @@ jobs:
   build:
     runs-on:
       group: Default
-      labels: label-1
     steps:
       - name: Checkout
         uses: actions/checkout@v3
